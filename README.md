@@ -52,14 +52,14 @@
 	* "Editor: Tab Size": 2
 	* "Editor: Detect Indentation": 체크 해제
 	* Workspace 탭 > "Files: Readonly Include"
+      - Readonly Include가 보이지 않을 경우 VSCode를 최신 버전(1.79 이상)으로 업데이트
       - Add Pattern > `PPT/**` 입력한 후 OK 선택
       - Add Pattern > `workspace-ins/**` 입력한 후 OK 선택
       - Add Pattern > `sample/**` 입력한 후 OK 선택
-      - Readonly Include가 보이지 않을 경우 VSCode를 최신 버전(1.79 이상)으로 업데이트
 
 ### sample 폴더 복사
 * sample/01/workspace 폴더를 복사해서 프로젝트 루트에 붙여넣기
-* 완성된 강사의 코드는 **workspace-ins** 폴더에서 확인
+* 완성된 강사의 코드는 **workspace-ins** 폴더에서 확인할 수 있음
 
 ### 웹 서버 구동
 1. VSCode의 터미널로 이동
@@ -74,8 +74,8 @@
 
 ### 실습 테스트
 * 각 예제 클릭해서 테스트
-  - Javascript 문법 관련 실습은 브라우저 개발자 도구 > 콘솔 탭에서 결과 확인
-  - DOM, Ajax 관련 실습은 새로운 화면으로 이동 후 테스트
+  - .js: Javascript 문법 관련 실습은 브라우저 개발자 도구 > 콘솔 탭에서 결과 확인
+  - .html: DOM, Ajax 관련 실습은 새로운 화면으로 이동 후 테스트
 
 ## 팁
 * VSCode에서 소스코드 비교
