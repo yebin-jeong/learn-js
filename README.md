@@ -95,7 +95,7 @@
 
 #### 오후(5시간)
 * 📜 자바스크립트란? ~ 자바스크립트 코드의 위치
-  - 💻 [01-01 인라인 자바스크립트](./workspace-int/ch01/ex01-01.html)
+  - 💻 [01-01 인라인 자바스크립트](./workspace-ins/ch01/ex01-01.html)
 * 백준 그룹 가입
   - https://www.acmicpc.net/group/23092
   - 💻 [boj/01/01.js](./workspace-ins/boj/01/01.js)
