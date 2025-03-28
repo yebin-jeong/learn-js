@@ -90,32 +90,32 @@
 
 ### 1일차(목)
 #### 오전(3시간)
-* https://github.com/FEBC-13/JS README
+* [JS 레포지토리 README](https://github.com/FEBC-13/JS)
 * 💻 개발환경 구성
 
 #### 오후(5시간)
 * 📜 자바스크립트란? ~ 자바스크립트 코드의 위치
-  - 💻 01-01 인라인 자바스크립트
+  - 💻 [01-01 인라인 자바스크립트](./workspace-int/ch01/ex01-01.html)
 * 백준 그룹 가입
   - https://www.acmicpc.net/group/23092
-  - 💻 boj/01/01.js
+  - 💻 [boj/01/01.js](./workspace-ins/boj/01/01.js)
 
 ### 2일차(금)
 #### 오전(3시간)
 * 📜 자바스크립트 코드의 위치
-  - 💻 01-02 외부 자바스크립트 파일 로드
+  - 💻 [01-02 외부 자바스크립트 파일 로드](./workspace-ins/ch01/ex01-02.html)
 * 📜 명령문과 주석
-  - 💻 01-04 명령문과 주석
+  - 💻 [01-04 명령문과 주석](./workspace-ins/ch01/ex01-04.js)
 
 #### 오후(3시간)
 * 📜 변수
-  - 💻 01-05 변수 선언
+  - 💻 [01-05 변수 선언](./workspace-ins/ch01//ex01-05.js)
 * 📜 원시 타입
-  - 💻 01-06 기본 데이터 타입 - Number, String, Boolean, undefined, null
+  - 💻 [01-06 기본 데이터 타입 - Number, String, Boolean, undefined, null](./workspace-ins/ch01/ex01-06.js)
 * 📜 산술 연산자
-  - 💻 01-08 산술 연산자 +, -, *, /, %, **
+  - 💻 [01-08 산술 연산자 +, -, *, /, %, **](./workspace-ins/ch01/ex01-08.js)
 * 백준
-  - 💻 boj/01/02.js
+  - 💻 [boj/01/02.js](./workspace-ins/boj/01/02.js)
 
 # 참고 사이트
 ## 자바스크립트 학습
