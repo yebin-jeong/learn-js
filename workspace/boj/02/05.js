@@ -40,3 +40,26 @@
 22 55
 */
 
+const fs = require("fs");
+const fileData = fs.readFileSync(0).toString().trim().split(" ");
+
+let h = parseInt(fileData[0]);
+let m = parseInt(fileData[1]);
+
+if (h !== 0) {
+  if (m < 45) {
+    h = h - 1;
+    m = 60 + (m - 45);
+  } else {
+    m = m - 45;
+  }
+} else {
+  if (m < 45) {
+    h = 23;
+    m = 60 + (m - 45);
+  } else {
+    m = m - 45;
+  }
+}
+
+console.log(h, m);

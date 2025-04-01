@@ -38,3 +38,24 @@
 600
 */
 
+const fs = require("fs");
+const fileData = fs.readFileSync(0).toString().trim().split(" ");
+
+let a = parseInt(fileData[0]);
+let b = parseInt(fileData[1]);
+let c = parseInt(fileData[2]);
+
+let mon = 0;
+
+if (a == b && b == c) {
+  mon = 10000 + a * 1000;
+} else if (a == b || a == c) {
+  mon = 1000 + a * 100;
+} else if (b == c) {
+  mon = 1000 + b * 100;
+} else {
+  let max = Math.max(a, b, c);
+  mon = max * 100;
+}
+
+console.log(mon);
