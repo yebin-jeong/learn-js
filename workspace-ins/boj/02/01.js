@@ -35,3 +35,17 @@ A와 B가 같은 경우에는 '=='를 출력한다.
 ==
 */
 
+<<<<<<< HEAD
+=======
+// 입력값 예시: 
+// 10 20
+const fs = require("fs");
+const fileData = fs.readFileSync(0).toString().trim().split(" ");
+// console.log(fileData);
+
+const a = parseInt(fileData[0]); // 10
+const b = parseInt(fileData[1]); // 20
+
+console.log(a > b ? '>' : (a < b ? '<' : '=='));
+
+>>>>>>> cee9a5e9953f45a8758e60746131e20c66fed825

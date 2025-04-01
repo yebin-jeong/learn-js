@@ -19,12 +19,22 @@
 3
 */
 
+<<<<<<< HEAD
 
+=======
+// 입력값 예시: 
+// 10 20
+>>>>>>> cee9a5e9953f45a8758e60746131e20c66fed825
 const fs = require("fs");
 const fileData = fs.readFileSync(0).toString().trim().split(" ");
 // console.log(fileData);
 
+<<<<<<< HEAD
 const a = parseInt(fileData[0]);
 const b = parseInt(fileData[1]);
+=======
+const a = parseInt(fileData[0]); // 10
+const b = parseInt(fileData[1]); // 20
+>>>>>>> cee9a5e9953f45a8758e60746131e20c66fed825
 
 console.log(a + b);
