@@ -210,7 +210,7 @@
   - 💻 [01-20-04 do-while문](./workspace-ins/ch01/ex01-20-04.js)
 * 📜 for문
   - 💻 [01-21 for문](./workspace-ins/ch01/ex01-21.js)
-  - 💻 [01-21-02](./workspace-ins/ch01/ex01-21-02.js)
+  - 💻 [01-21-02 for문을 사용하여 별찍기](./workspace-ins/ch01/ex01-21-02.js)
 
 ##### boj
 * 문제 풀이
