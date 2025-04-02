@@ -157,6 +157,7 @@
   - 💻 [01-11 비교 연산자 >, >=, <, <=, ==, !=, ===, !==](./workspace-ins/ch01/ex01-11.js)
   
 ##### 오후(3시간)
+* 📜 비교 연산자
   - 💻 [01-11-02 비교 연산자 - 다음 값들을 비교한 결과를 예측](./workspace-ins/ch01/ex01-11-02.js)
 * 📜 일치, 동등 연산자
 * 📜 논리 연산자
@@ -172,7 +173,63 @@
 * 문제 추천
   - 두 수 비교하기 - [boj/02/01.js](./workspace-ins/boj/02/01.js)
 
+<<<<<<< HEAD
 >>>>>>> cee9a5e9953f45a8758e60746131e20c66fed825
+=======
+### 4일차(화)
+##### 오전(3시간)
+* 📜 if문
+  - 💻 [01-16 if문](./workspace-ins/ch01/ex01-16.js)
+  - 💻 [01-16-02 if문을 사용하여 학점 출력](./workspace-ins/ch01/ex01-16-02.js)
+  - 💻 [01-16-03 if문을 이용하여 사용자와 로그인 상태 출력](./workspace-ins/ch01/ex01-16-03.js)
+* 📜 if-else문
+  - 💻 [01-17 if-else문](./workspace-ins/ch01/ex01-17.js)
+
+##### 오후(3시간)
+* 📜 if-else문
+  - 💻 [01-17-02 if-else문을 사용하여 학점 출력](./workspace-ins/ch01/ex01-17-02.js)
+  - 💻 [01-17-03 if-else문을 사용하여 사용자와 로그인 상태 출력](./workspace-ins/ch01/ex01-17-03.js)
+* 📜 if-else if문
+  - 💻 [01-18 if-else if문](./workspace-ins/ch01/ex01-18.js)
+  - 💻 [01-18-02 if-else if문을 사용하여 학점 출력](./workspace-ins/ch01/ex01-18-02.js)
+  - 💻 [01-18-03 if-else if문을 사용하여 사용자와 로그인 상태 출력](./workspace-ins/ch01/ex01-18-03.js)
+  - 💻 [01-18-04 if-else if문을 사용하여 정보처리 기사 필기 시험 결과 출력](./workspace-ins/ch01/ex01-18-04.js)
+
+##### boj
+* 문제 풀이
+  - 💻 두 수 비교하기 - [boj/02/01.js](./workspace-ins/boj/02/01.js)
+* 문제 추천
+  - 💻 시험 성적 - [boj/02/02.js](./workspace-ins/boj/02/02.js)
+  - 💻 윤년 - [boj/02/03.js](./workspace-ins/boj/02/03.js)
+  - 💻 사분면 고르기 - [boj/02/04.js](./workspace-ins/boj/02/04.js)
+  - 💻 알람 시계 - [boj/02/05.js](./workspace-ins/boj/02/05.js)
+  - 💻 오븐 시계 - [boj/02/06.js](./workspace-ins/boj/02/06.js)
+  - 💻 주사위 세개 - [boj/02/07.js](./workspace-ins/boj/02/07.js)
+
+### 5일차(수)
+##### 오전(3시간)
+* 📜 if-else if문
+  - 💻 [01-18-05 if-else if문을 사용하여 계산기, 요일, 계절 출력](./workspace-ins/ch01/ex01-18-05.js)
+* 📜 switch문
+  - 💻 [01-19 switch문](./workspace-ins/ch01/ex01-19.js)
+  - 💻 [01-19-02 switch문을 사용하여 학점 출력](./workspace-ins/ch01/ex01-19-02.js)
+  - 💻 [01-19-03 switch문을 사용하여 계산기, 요일, 계절 출력](./workspace-ins/ch01/ex01-19-03.js)
+
+##### 오후(3시간)
+* 📜 while문
+  - 💻 [01-20 while문](./workspace-ins/ch01/ex01-20.js)
+  - 💻 [01-20-02 while문을 사용하여 홀수/짝수 합계 구하기](./workspace-ins/ch01/ex01-20-02.js)
+  - 💻 [01-20-03 while문을 사용하여 쌀알 모으기](./workspace-ins/ch01/ex01-20-03.js)
+  - 💻 [01-20-04 do-while문](./workspace-ins/ch01/ex01-20-04.js)
+* 📜 for문
+  - 💻 [01-21 for문](./workspace-ins/ch01/ex01-21.js)
+  - 💻 [01-21-02 for문을 사용하여 별찍기](./workspace-ins/ch01/ex01-21-02.js)
+
+##### boj
+* 문제 풀이
+  - 💻 두 수 비교하기 (if문으로 수정) - [boj/02/01.js](./workspace-ins/boj/02/01.js)
+
+>>>>>>> d9fa26cd2fbc4b64c56784f34357b162463e3ded
 
 # 참고 사이트
 ## 자바스크립트 학습

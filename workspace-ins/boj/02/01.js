@@ -46,6 +46,16 @@ const fileData = fs.readFileSync(0).toString().trim().split(" ");
 const a = parseInt(fileData[0]); // 10
 const b = parseInt(fileData[1]); // 20
 
-console.log(a > b ? '>' : (a < b ? '<' : '=='));
+// console.log(a > b ? '>' : (a < b ? '<' : '=='));
 
+<<<<<<< HEAD
 >>>>>>> cee9a5e9953f45a8758e60746131e20c66fed825
+=======
+if (a > b) {
+  console.log('>');
+} else if (a < b) {
+  console.log('<');
+} else {
+  console.log('==');
+}
+>>>>>>> d9fa26cd2fbc4b64c56784f34357b162463e3ded
