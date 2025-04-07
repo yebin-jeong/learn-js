@@ -19,13 +19,23 @@
 3
 */
 
+function main() {
+  const data = getData();
+  // data에서 값을 꺼내서 문제 해결하는 코드 작성
+  console.log(data.a + data.b);
+}
+main();
+
 // 입력값 예시: 
 // 10 20
-const fs = require("fs");
-const fileData = fs.readFileSync(0).toString().trim().split(" ");
-// console.log(fileData);
+function getData() {
+  const fs = require("fs");
+  const fileData = fs.readFileSync(0).toString().trim().split(" ");
 
-const a = parseInt(fileData[0]); // 10
-const b = parseInt(fileData[1]); // 20
+  const result = new Object();
 
-console.log(a + b);
+  result.a = parseInt(fileData[0]); // result.a = 10
+  result.b = parseInt(fileData[1]); // result.b = 20
+
+  return result;
+}
