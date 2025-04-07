@@ -29,3 +29,14 @@
 7
 */
 
+const fs = require("fs");
+const fileData = fs.readFileSync(0).toString().trim().split("\n");
+
+const T = parseInt(fileData[0]);
+
+for (let i = 1; i <= T; i++) {
+  const data = fileData[i].split(" "); // 배열이 들어있기 때문에 parseInt 쓰면 NaN
+  const a = parseInt(data[0]);
+  const b = parseInt(data[1]);
+  console.log(a + b);
+}

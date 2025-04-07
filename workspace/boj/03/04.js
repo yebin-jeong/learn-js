@@ -136,3 +136,21 @@ No
 No
 */
 
+const fs = require("fs");
+const fileData = fs.readFileSync(0).toString().trim().split("\n");
+
+const sum = parseInt(fileData[0]);
+const n = parseInt(fileData[1]);
+let total = 0;
+
+for (let i = 2; i < n + 2; i++) {
+  const data = fileData[i].split(" ");
+  const price = parseInt(data[0]);
+  const cnt = parseInt(data[1]);
+  total = total + price * cnt;
+}
+if (total === sum) {
+  console.log("Yes");
+} else {
+  console.log("No");
+}

@@ -48,3 +48,14 @@ long int
 long long long long long int
 */
 
+const fs = require("fs");
+const fileData = fs.readFileSync(0).toString();
+
+const n = parseInt(fileData);
+let arr = "";
+const long = n / 4;
+
+for (let i = 0; i < long; i++) {
+  arr += "long ";
+}
+console.log(`${arr}int`);

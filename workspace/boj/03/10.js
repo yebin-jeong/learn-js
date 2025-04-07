@@ -24,3 +24,19 @@
 *****
 */
 
+const fs = require("fs");
+const fileData = fs.readFileSync(0).toString();
+
+const n = parseInt(fileData);
+
+for (let i = 1; i <= n; i++) {
+  let spc = "";
+  let str = "";
+  for (let j = n - i; j > 0; j--) {
+    spc += " ";
+  }
+  for (let j = 0; j < i; j++) {
+    str += "*";
+  }
+  console.log(spc + str);
+}
