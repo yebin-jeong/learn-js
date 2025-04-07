@@ -29,7 +29,7 @@ function main() {
   console.log(data.a + data.b);
   console.log(data.a - data.b);
   console.log(data.a * data.b);
-  console.log(data.a / data.b);
+  console.log(Math.floor(data.a / data.b));
   console.log(data.a % data.b);
 }
 main();
