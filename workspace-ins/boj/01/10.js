@@ -52,6 +52,10 @@ function main() {
   const n1 = data.a; // 472
   const n2 = String(data.b); // '385'
 
+  // TODO toString() 단원
+  // 박상희.toString() => '박상희는 천재다.'
+  // String(박상희) !=> '박상희는 천재다.'
+
   const n3 = n1 * n2[0];
   const n4 = n1 * n2[1];
   const n5 = n1 * n2[2];
