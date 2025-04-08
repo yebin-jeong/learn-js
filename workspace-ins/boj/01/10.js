@@ -38,12 +38,24 @@
 function main() {
   const data = getData();
   // data에서 값을 꺼내서 문제 해결하는 코드 작성
-  const n1 = data.a; // 472
-  const n2 = data.b; // 385
+  // const n1 = data.a; // 472
+  // const n2 = data.b; // 385
 
-  const n3 = n1 * (n2 % 10); // 472 * 5
-  const n4 = n1 * (parseInt(n2/10) % 10); // 472 * (38 % 10) = 472 * 8
-  const n5 = n1 * parseInt(n2/100); // 472 * 3
+  // const n3 = n1 * (n2 % 10); // 472 * 5
+  // const n4 = n1 * (parseInt(n2/10) % 10); // 472 * (38 % 10) = 472 * 8
+  // const n5 = n1 * parseInt(n2/100); // 472 * 3
+
+  // const n5 = n1 * parseInt(n2/100); // 472 * 3
+  // const n4 = n1 * parseInt((n2-n5*100)/10); // 472 * (385-300)/10 = 472 * 8
+  // const n3 = n1 * (n2 % 10); // 472 * 5
+
+  const n1 = data.a; // 472
+  const n2 = String(data.b); // '385'
+
+  const n3 = n1 * n2[0];
+  const n4 = n1 * n2[1];
+  const n5 = n1 * n2[2];
+
   const n6 = n3 + n4*10 + n5*100;
 
   console.log(n3);
