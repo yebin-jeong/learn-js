@@ -26,9 +26,18 @@ const arr = {
   length: 3,
   0: 'orange',
   1: 'yellow',
-  2: 'green'
+  2: 'green',
+  /**
+   * 맨 끝에 지정한 elem를 추가한다.
+   * @param {*} elem - 추가할 요소
+   */
+  push: function(elem){ // TODO this 배운 후에
+    arr[arr.length] = elem;
+    arr.length++;
+  }
 };
 arr.push('black');
+arr.push('white');
 printArr(arr);
 
 // 문자열도 유사 배열 객체의 일종
