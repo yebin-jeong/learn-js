@@ -31,5 +31,6 @@ const strFoo = JSON.stringify(foo);
 console.log('strFoo', typeof strFoo, strFoo);
 console.log(foo.job, strFoo.job); // 요정, undefined
 
+// TODO ajax 단원에서..., JSON.parse() 함수를 사용하면 JSON 형태의 문자열을 객체로 변환 가능
 const objFoo = JSON.parse(strFoo);
 console.log('objFoo', typeof objFoo, objFoo);
