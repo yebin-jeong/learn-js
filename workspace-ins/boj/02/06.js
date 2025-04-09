@@ -46,11 +46,11 @@ function main() {
   const m = data[0][1];
   const c = data[1][0];
 
-  let totalMin = h * 60 + m + c;
+  let totalMin = (h * 60 + m + c) % (60 * 24);
 
-  if(totalMin > 60*24) {
-    totalMin -= 60*24;
-  }
+  // if(totalMin >= 60*24) {
+  //   totalMin -= 60*24;
+  // }
 
   const result = {
     h: Math.floor(totalMin / 60),
