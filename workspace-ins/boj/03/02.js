@@ -31,7 +31,7 @@
 
 function main() {
   const data = getData();
-  // console.log(data);
+  // console.log(data); // [ [ 5 ], [ 1, 1 ], [ 2, 3 ], [ 3, 4 ], [ 9, 8 ], [ 5, 2 ] ]
   for (let i = 1; i<data.length; i++) {
     const rowArr = data[i];
     console.log(rowArr[0] + rowArr[1]);
