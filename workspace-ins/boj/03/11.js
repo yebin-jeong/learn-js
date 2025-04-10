@@ -36,10 +36,22 @@
 function main() {
   const data = getData();
   // console.log(data);
-  
+
   for (let i=0; i<data.length-1; i++) {
     // if (data[i][0] === 0 && data[i][1] === 0) continue; 
     console.log(data[i][0] + data[i][1]);
+  }
+
+  // 구성연
+  // data에서 값을 꺼내서 문제 해결하는 코드 작성
+  for (let i = 0; i < data.length; i++) {
+    const a = data[i][0];
+    const b = data[i][1];
+    if (a === 0 && b === 0) {
+      break;
+    } else {
+      console.log(`${a + b}`);
+    }
   }
 
 }
