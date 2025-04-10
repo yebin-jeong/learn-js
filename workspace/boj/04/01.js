@@ -39,3 +39,23 @@
 1
 */
 
+const fs = require("fs");
+const fileData = fs.readFileSync(0).toString().trim().split("\n");
+
+let cnt = 0;
+const n = parseInt(fileData[0]);
+const numsStr = fileData[1].split(" ");
+const v = parseInt(fileData[2]);
+
+let nums = [];
+for (let i = 0; i < numsStr.length; i++) {
+  nums.push(parseInt(numsStr[i]));
+}
+
+for (let i = 0; i < nums.length; i++) {
+  if (nums[i] === v) {
+    cnt++;
+  }
+}
+
+console.log(cnt);
