@@ -32,7 +32,10 @@ function getData() {
     for (let k=0; k<rowArr.length; k++) {
       rowArr[k] = isNaN(rowArr[k]) ? rowArr[k] : parseInt(rowArr[k]);
     }
-    result.push(rowArr);
+    result.push(rowArr.length === 1 ? rowArr[0] : rowArr);
+    // result.push(rowArr);
   }
-  return result;
+  
+  return result.length===1 ? result[0] : result;
+  // return result;
 }
