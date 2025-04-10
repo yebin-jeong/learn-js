@@ -26,13 +26,29 @@
 function main() {
   const data = getData();
   // console.log(data);
-  for (let i=0; i<data; i++) {
-    let stars = '';
-    for (let k=0; k<=i; k++) {
-      stars += '*';
-    }
-    console.log(stars);
+  // for (let i=1; i<=data; i++) {
+  //   let stars = '*'.repeat(i);
+  //   // let stars = '';
+  //   // for (let k=1; k<=i; k++) {
+  //   //   stars += '*';
+  //   // }
+  //   console.log(stars);
+  // }
+
+  // 박선영
+  let result = '';
+  for (let i = 0; i < data; i++) {
+    result += '*';
+    console.log(result);
   }
+
+  // 박상희
+  let result2 = '';
+  for(let i=0; i<data; i++){
+    console.log(result2 += '*');
+  }
+
+
 }
 main();
 
