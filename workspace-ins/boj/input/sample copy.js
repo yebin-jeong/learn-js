@@ -2,7 +2,6 @@ function main() {
   const data = getData();
   console.log(data);
 }
-main();
 
 function getData() {
   const arr = require("fs").readFileSync(0).toString().trim().split("\n");
@@ -14,3 +13,5 @@ function getData() {
   }
   return result.length===1 ? result[0] : result;
 }
+
+main();
