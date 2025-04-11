@@ -40,7 +40,7 @@ function main() {
   const data = getData();
   // console.log(data);
   const n = data[0][0];
-  let result = new Array(n).fill(0);
+  const result = new Array(n).fill(0);
 
   for (let i = 1; i < data.length; i++) {
     const rowArr = data[i];
