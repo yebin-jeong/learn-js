@@ -54,6 +54,22 @@ if (isInStudent) {
 // 전체 수강생이 몇명인가?
 console.log('전체 수강생', sum);
 
+// febc에 '박선영'이 존재하는가?
+// let isInPark = false;
+// for (let i=0; i<lionStudents[0].length; i++) {
+//   if (lionStudents[0][i] === '박선영') {
+//     isInPark = true;
+//     break;
+//   }
+// }
+
+const febcStudents = lionStudents[0];
+let isInPark = febcStudents.includes('박선영');
+if(isInPark) {
+  console.log('선영 있음');
+}else{
+  console.log('선영 없다');
+}
 
 
 
