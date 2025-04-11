@@ -47,9 +47,14 @@
 function main() {
   const data = getData();
   // console.log(data); // [ [ 5, 4 ], [ 1, 2, 3 ], [ 3, 4, 4 ], [ 1, 4, 1 ], [ 2, 2, 2 ] ]
-  const n = data[0][0]; // 5
-  const result = new Array(n).fill(0); // [ 0, 0, 0, 0, 0 ]
 
+  // 첫 번째 줄에서 바구니의 개수(n)를 가져옴
+  const n = data[0][0];
+  
+  // n개의 바구니를 0으로 초기화한 배열 생성
+  const result = new Array(n).fill(0);
+
+  // 각 공 넣기 명령을 순회
   for(let i=1; i<data.length; i++) {
     const rowArr = data[i]; // i=1 [ 1, 2, 3 ], i=2 [ 3, 4, 4 ] ...
     const x = rowArr[0]; // 시작 바구니 번호
@@ -63,14 +68,18 @@ function main() {
     4회차: [ 2, 2, 2 ] => 1 2 1 1 0
     */
     for(let k = x; k <= y; k++) {
+      // x번부터 y번 바구니까지 z번 공을 넣음
+      // k-1을 하는 이유: 배열은 0부터 시작하지만 바구니는 1부터 시작하므로 인덱스 조정
       result[k-1] = z;
     }
   }
 
+  // 결과 배열을 공백으로 구분된 문자열로 변환하여 출력
   // [1, 2, 1, 1, 0] => '1 2 1 1 0'
   const strResult = result.join(' ');
   console.log(strResult);
 
+  // 문자열을 다시 배열로 변환 (참고용 코드)
   // '1 2 1 1 0' => [1, 2, 1, 1, 0]
   const reArray = strResult.split(' ');
   console.log(reArray);
