@@ -14,7 +14,7 @@ FEBC 수강생의 이름을 저장하는 배열을 작성해 보자.
 // lionStudents[1] : BEBC 수강생
 // lionStudents[2] : AOSBC 수강생
 const lionStudents = [
-  ['십이기핑', '몰라핑', '안가르쳤어핑', '임한길', '이호정', '김현지', '이도울', '박선영', '김하영'],
+  ['십이기핑', '몰라핑', '안가르쳤어핑', '임한길', '이호정', '김현지', '이도울', '박선영', '김하영'], // febc
   ['하츄핑', '키키핑', '주르핑', '아잉핑', '바로핑', '라라핑', '아자핑'],
   ['부투핑', '무셔핑', '차나핑', '안드핑', '로이핑', '애플핑', '스티브핑', '잡스핑'],
 ];
@@ -35,6 +35,8 @@ for(let i=0; i<lionStudents.length; i++) {
 
   // 바로핑이라는 수강생이 있는가?
   for(let k=0; k<campStudents.length; k++) {
+    // febc 모든 수강생 이름 출력
+    if(i === 0) console.log(campStudents[k]);
     if(campStudents[k] === '바로핑') {
       isInStudent = true;
       break;  // '바로핑'을 찾으면 더 이상 검색할 필요가 없으므로 반복문 종료
@@ -53,7 +55,5 @@ if (isInStudent) {
 console.log('전체 수강생', sum);
 
 
-
-// febc 모든 수강생 이름 출력
 
 
