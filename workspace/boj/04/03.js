@@ -23,3 +23,30 @@ N개의 정수가 주어진다.
 7 35
 */
 
+function main() {
+  const data = getData();
+  let max = data[1][0];
+  let min = data[1][0];
+  for (let i = 0; i < data[1].length; i++) {
+    if (max < data[1][i]) {
+      max = data[1][i];
+    } else if (min > data[1][i]) {
+      min = data[1][i];
+    }
+  }
+  console.log(min, max);
+}
+
+function getData() {
+  const arr = require("fs").readFileSync(0).toString().trim().split("\n");
+  const result = [];
+  for (let row of arr) {
+    const rowArr = row.split(" ");
+    for (let k = 0; k < rowArr.length; k++)
+      rowArr[k] = isNaN(rowArr[k]) ? rowArr[k] : parseInt(rowArr[k]);
+    result.push(rowArr.length === 1 ? rowArr[0] : rowArr);
+  }
+  return result.length === 1 ? result[0] : result;
+}
+
+main();
