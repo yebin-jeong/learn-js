@@ -18,12 +18,13 @@
     // id가 "purchases"인 요소노드를 찾음
     // const shoppingList = document.getElementById('purchases'); // ul
     
-    const shoppingList = document.getElementsByClassName('list'); // ul
+    const shoppingList = document.getElementsByClassName('list')[0]; // ul
 
     // 제일 먼저 구매해야 할 항목은 무엇인가?
     // const liList = shoppingList.getElementsByTagName('li'); // [li, li, li]
     // console.log(liList);
     // const firstLi = liList[0]; // <li>두부</li>
+
     const firstLi = shoppingList.firstElementChild; // <li>두부</li>
     console.log(firstLi);
     const firstTextNode = firstLi.firstChild; // 두부 object
@@ -35,6 +36,9 @@
 
     // 마지막으로 사야할 품목 출력
     console.log('마지막으로 사야할 품목', shoppingList.lastElementChild.firstChild.nodeValue)
+
+    // 마지막으로 사야할 품목 출력(querySelector)
+    console.log(document.querySelector('#purchases > li:last-child').firstChild.nodeValue);
 
     // 최승균
     // 코카콜라맛있다 맛있으면 또먹어
