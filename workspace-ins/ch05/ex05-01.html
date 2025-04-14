@@ -24,15 +24,16 @@
     // const firstLi = liList[0]; // <li>두부</li>
     const firstLi = shoppingList.firstElementChild; // <li>두부</li>
     console.log(firstLi);
-    const firstTextNode = firstLi.firstChild;
+    const firstTextNode = firstLi.firstChild; // 두부 object
     console.log(firstTextNode);
-    console.log('제일 먼저 구매할 항목', firstTextNode.nodeValue);
+    console.log('제일 먼저 구매할 항목', firstTextNode.nodeValue); // 두부 string
 
     // 첫번째 구매할 항목을 양파로 수정
     firstTextNode.nodeValue = '양파';
 
     // 마지막으로 사야할 품목 출력
-    
+    console.log('마지막으로 사야할 품목', shoppingList.lastElementChild.firstChild.nodeValue)
+
   </script>
 </body>
 </html>
