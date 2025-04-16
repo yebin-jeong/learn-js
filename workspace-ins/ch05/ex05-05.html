@@ -66,7 +66,6 @@
       // <button>
       const deleteElem = document.createElement('button');
 
-
       // 3
       const noTxt = document.createTextNode(item.no);
       // 샘플3
@@ -74,24 +73,53 @@
       // 삭제
       const deleteTxt = document.createTextNode('삭제');
 
+      // <span>3</span>
+      noElem.appendChild(noTxt);
+      // <span>샘플3</span>
+      titleElem.appendChild(titleTxt);
+      // <button type="button">삭제</button>
+      deleteElem.setAttribute('type', 'button');
+      deleteElem.appendChild(deleteTxt);
+
+      // <li><span>3</span></li>
+      liElem.appendChild(noElem);
+      // <li><span>3</span><span>샘플3</span></li>
+      liElem.appendChild(titleElem);
+      // <li><span>3</span><span>샘플3</span><button type="button">삭제</button></li>
+      liElem.appendChild(deleteElem);
+
+      // <li>
+      //   <span>3</span>
+      //   <span>샘플3</span>
+      //   <button type="button">삭제</button>
+      // </li>
       return liElem;
     }
 
 
     // "추가" 버튼 클릭 이벤트 핸들러
     function handleAdd(){
-      addItem();
+      const inputElem = document.querySelector('.todoinput > input');
+      addItem(inputElem.value);
     }
+
+    // let itemNo = 3;
 
     // 할일 추가
     function addItem(title){
+      const todoList = document.querySelector('.todolist');
+
       const item = {
-        no: 4,
-        title: '테스트',
-        done: false
+        no: todoList.length + 1,
+        // no: ++itemNo,
+        // title: title, // 속성값을 담는 변수가 속성명과 일치할 경우 속성값 생략 가능
+        title,
+        done: false // 미완료 상태
       };
       const todoLi = getTodoItemElem(item);
       console.log(todoLi);
+      
+      todoList.appendChild(todoLi);
     }
 
     // 완료/미완료 처리
