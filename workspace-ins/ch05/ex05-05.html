@@ -100,7 +100,7 @@
     // "추가" 버튼 클릭 이벤트 핸들러
     function handleAdd(){
       const inputElem = document.querySelector('.todoinput > input');
-      addItem(inputElem.value);
+      addItem(inputElem.value); // <input>, <select> 같은 폼의 입력 요소에는 value 속성으로 사용자가 입력/선택한 값이 저장되어 있음
     }
 
     // let itemNo = 3;
@@ -110,7 +110,8 @@
       const todoList = document.querySelector('.todolist');
 
       const item = {
-        no: todoList.length + 1,
+        // children: 자식노드의 목록(요소노드)
+        no: todoList.children.length + 1,
         // no: ++itemNo,
         // title: title, // 속성값을 담는 변수가 속성명과 일치할 경우 속성값 생략 가능
         title,
