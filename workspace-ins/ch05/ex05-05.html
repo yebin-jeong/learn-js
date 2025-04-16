@@ -16,7 +16,7 @@
           <li>
             <h2>쇼핑 목록</h2>
             <div class="todoinput">
-              <input type="text" autofocus>
+              <input type="text" autofocus onkeyup="handleKeyup(event)">
               <button type="button" onclick="handleAdd()">추가</button>
             </div>
             <ul class="todolist">
@@ -106,7 +106,16 @@
     // "추가" 버튼 클릭 이벤트 핸들러
     function handleAdd(){
       const inputElem = document.querySelector('.todoinput > input');
-      addItem(inputElem.value); // <input>, <select> 같은 폼의 입력 요소에는 value 속성으로 사용자가 입력/선택한 값이 저장되어 있음
+      if(inputElem.value !== '') {
+        addItem(inputElem.value); // <input>, <select> 같은 폼의 입력 요소에는 value 속성으로 사용자가 입력/선택한 값이 저장되어 있음
+        inputElem.value = '';
+        inputElem.focus();
+      }
+    }
+
+    // 엔터 키를 눌렀을때 처리할 이벤트 핸들러
+    function handleKeyup(event){ // 키보드 이벤트 정보를 가지고 있는 Event 객체
+      console.log(event);
     }
 
     // let itemNo = 3;
@@ -137,8 +146,10 @@
 
     // 할일 삭제
     function deleteItem(no){
-      const targetLi = document.querySelector(`li[data-no="${no}"]`);
+      const targetLi = document.querySelector(`.todolist > li[data-no="${no}"]`);
+      targetLi.remove();
     }
+
   </script>
 </body>
 </html>
