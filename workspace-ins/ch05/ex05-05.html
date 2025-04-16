@@ -17,7 +17,7 @@
             <h2>쇼핑 목록</h2>
             <div class="todoinput">
               <input type="text" autofocus>
-              <button type="button">추가</button>
+              <button type="button" onclick="handleAdd()">추가</button>
             </div>
             <ul class="todolist">
               <li>
@@ -57,11 +57,30 @@
       </li>
       */
 
+      // <li>
       const liElem = document.createElement('li');
+      // <span>
+      const noElem = document.createElement('span');
+      // <span>
+      const titleElem = document.createElement('span');
+      // <button>
+      const deleteElem = document.createElement('button');
 
 
+      // 3
+      const noTxt = document.createTextNode(item.no);
+      // 샘플3
+      const titleTxt = document.createTextNode(item.title);
+      // 삭제
+      const deleteTxt = document.createTextNode('삭제');
 
       return liElem;
+    }
+
+
+    // "추가" 버튼 클릭 이벤트 핸들러
+    function handleAdd(){
+      addItem();
     }
 
     // 할일 추가
