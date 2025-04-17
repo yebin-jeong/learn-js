@@ -21,9 +21,12 @@
         const x = event.clientX - smile.clientWidth;
         const y = event.clientY - smile.clientHeight;
 
-        smile.style.left = x + 'px';
-        smile.style.top = y + 'px';
-        smile.style.fontSize = x / 5 + 'px';
+        // smile.style.left = x + 'px';
+        // smile.style.top = y + 'px';
+        // smile.style.fontSize = x / 5 + 'px';
+
+        smile.style.cssText = `left: ${x}px; top: ${y}px; font-size: ${x / 5}px;`;
+        // smile.setAttribute('style', `left: ${x}px; top: ${y}px; font-size: ${x / 5}px;`);
       });
       
     });
