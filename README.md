@@ -407,32 +407,33 @@
 #### 오전(3시간)
 * 2강 함수 시작
 * 📜 일급 객체
-  - 💻 [02-01 이벤트 위임](./workspace-ins/ch02/ex02-01.js)
-  - 💻 [02-02 이벤트 위임](./workspace-ins/ch02/ex02-02.js)
-  - 💻 [02-03 이벤트 위임](./workspace-ins/ch02/ex02-03.js)
-  - 💻 [02-04 이벤트 위임](./workspace-ins/ch02/ex02-04.js)
+  - 💻 [02-01 변수, 배열 엘리먼트, 다른 객체의 프로퍼티에 함수 할당](./workspace-ins/ch02/ex02-01.js)
+  - 💻 [02-02 함수를 다른 함수의 인자로 전달](./workspace-ins/ch02/ex02-02.js)
+  - 💻 [02-03 함수를 다른 함수의 리턴값으로 활용](./workspace-ins/ch02/ex02-03.js)
+  - 💻 [02-04 함수도 객체처럼 프로퍼티를 가질 수 있다.](./workspace-ins/ch02/ex02-04.js)
 * 📜 함수 생성 1 (선언문)
-  - 💻 [02-05 이벤트 위임](./workspace-ins/ch02/ex02-05.js)
+  - 💻 [02-05 선언문](./workspace-ins/ch02/ex02-05.js)
 * 📜 함수 생성 2 (표현식)
-  - 💻 [02-06 이벤트 위임](./workspace-ins/ch02/ex02-06.js)
-  - 💻 [02-07 이벤트 위임](./workspace-ins/ch02/ex02-07.js)
-  - 💻 [02-08 이벤트 위임](./workspace-ins/ch02/ex02-08.js)
+  - 💻 [02-06 표현식 - 익명함수](./workspace-ins/ch02/ex02-06.js)
+  - 💻 [02-07 표현식 - 기명함수](./workspace-ins/ch02/ex02-07.js)
+  - 💻 [02-08 표현식 - 기명함수 사용(팩토리얼 함수)](./workspace-ins/ch02/ex02-08.js)
 
 #### 오후(3시간)
 * 📜 함수 생성 3 (생성자 함수)
-  - 💻 [02-09 이벤트 위임](./workspace-ins/ch02/ex02-09.js)
-  - 💻 ex02-09.js
+  - 💻 [02-09 Function 생성자 함수](./workspace-ins/ch02/ex02-09.js)
 * 📜 함수 생성 4 (화살표 함수)
-  - 💻 [02-10 이벤트 위임](./workspace-ins/ch02/ex02-10.js)
-  - 💻 ex02-10.js
+  - 💻 [02-10 화살표 함수](./workspace-ins/ch02/ex02-10.js)
+  - 💻 [02-10-02 화살표 함수 - 배열 메서드에서 사용](./workspace-ins/ch02/ex02-10-02.js)
 * 📜 호이스팅
-  - 💻 [02-11 이벤트 위임](./workspace-ins/ch02/ex02-11.js)
-  - 💻 [02-12 이벤트 위임](./workspace-ins/ch02/ex02-12.js)
-  - 💻 ex02-11.js
-  - 💻 ex02-12.js
+  - 💻 [02-11 선언문 방식과 함수 호이스팅](./workspace-ins/ch02/ex02-11.js)
+  - 💻 [02-11-02 선언문 방식과 함수 호이스팅(실제 호출되는 순서에 맞춰서)](./workspace-ins/ch02/ex02-11-02.js)
+  - 💻 [02-12 변수 호이스팅](./workspace-ins/ch02/ex02-12.js)
+  - 💻 [02-12-02 표현식 방식과 함수 호이스팅](./workspace-ins/ch02/ex02-12-02.js)
+  - 💻 [02-12-03 변수 호이스팅](./workspace-ins/ch02/ex02-12-03.js)
 * 📜 매개변수와 인자의 수
 * 📜 암묵적 매개변수
-  - 💻 [02-13 이벤트 위임](./workspace-ins/ch02/ex02-13.js)
+  - 💻 [02-13 매개변수와 인자수, arguments](./workspace-ins/ch02/ex02-13.js)
+  - 💻 [02-13-02 arguments 대신 나머지 매개변수 사용](./workspace-ins/ch02/ex02-13-02.js)
 
 
 # 참고 사이트
