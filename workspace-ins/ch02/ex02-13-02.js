@@ -7,8 +7,8 @@
   - 매개변수 뒤에  "= 초기값" 형태로 작성
 */
 
-function fn(n1, n2, ...nums){
-  console.log(n1=0, n2=0, nums);
+function fn(n1=0, n2=0, ...nums){
+  console.log(n1, n2, nums);
   // if(!n1) n1 = 0;
   // n2 = n2 || 0;
   var sum = n1 + n2;
