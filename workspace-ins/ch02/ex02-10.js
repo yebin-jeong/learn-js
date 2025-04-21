@@ -23,13 +23,11 @@ let add10 = function(x) {
 };
 
 // 화살표 함수
-add10 = function(x) {
+add10 = (x) => {
   return x + 10;
 };
 
 // 화살표 함수 축약
-add10 = function(x) {
-  return x + 10;
-};
+add10 = x => x + 10;
 
 console.log(add10(100));
