@@ -35,9 +35,9 @@ const arr = {
    * 맨 끝에 지정한 elem를 추가한다.
    * @param {*} elem - 추가할 요소
    */
-  push: function(elem){ // TODO this 배운 후에
-    arr[arr.length] = elem; // 현재 length 위치에 요소 추가
-    arr.length++; // length 증가
+  push: function(elem){ // TODO this 배운 후에. this = arr
+    this[this.length] = elem; // 현재 length 위치에 요소 추가
+    this.length++; // length 증가
   }
 };
 arr.push('black'); // 유사 배열에 'black' 추가
