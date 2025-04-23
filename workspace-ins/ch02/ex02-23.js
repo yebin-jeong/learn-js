@@ -1,5 +1,11 @@
 // 지정한 수가 소수인지 여부를 반환
 const isPrime = function(num){
+  // 캐시를 위한 코드
+  isPrime._cache = isPrime._cache || {};
+  if(isPrime._cache[num] !== undefined){ // num에 대해서 계산이 끝나고 캐시된 경우
+    return isPrime._cache[num];
+  }
+
   // 소수 판별 코드
   let prime = true;
 
@@ -9,6 +15,9 @@ const isPrime = function(num){
       break;
     }
   }
+
+  // 캐시를 위한 코드
+  isPrime._cache[num] = prime;
 
   return prime;
 };
