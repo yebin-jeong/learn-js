@@ -7,21 +7,21 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      console.log('load 이벤트 발생.');
+      console.log('1. load 이벤트 발생.');
 
       const btn = document.querySelector('button');
       btn.addEventListener('click', () => {
-        console.log('click 이벤트 발생.');
+        console.log('3. click 이벤트 발생.');
 
-        const msg = '버튼 누른 후 3초 지남.';
+        const msg = '5. 버튼 누른 후 3초 지남.';
         setTimeout(() => {
           console.log(msg);
         }, 1000*3);
 
-        console.log('click 이벤트 처리 완료.');
+        console.log('4. click 이벤트 처리 완료.');
       });
 
-      console.log('load 이벤트 처리 완료.');
+      console.log('2. load 이벤트 처리 완료.');
     });
   </script>
 </head>
