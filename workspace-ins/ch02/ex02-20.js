@@ -4,12 +4,14 @@
  * @param {number} eng 영어 점수
  * @param {number} math 수학 점수
  */
+
 const Score = function(kor, eng, math){
   this.kor = kor;
   this.eng = eng;
   this.math = math;
 
   this.sum = function(){
+    // TODO Closure 단원. 실행이 완료된 함수의 지역변수가 참조 가능한 상태로 유지되는 현상
     // return kor + eng + math;
     return this.kor + this.eng + this.math;
   };
