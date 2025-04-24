@@ -8,8 +8,15 @@
  * @param {number} eng 영어 점수
  */
 function HighSchool(kor, eng){
-
+  this.kor = kor;
+  this.eng = eng;
 }
+HighSchool.prototype.sum = function(){
+  return this.kor + this.eng;
+};
+HighSchool.prototype.avg = function(){
+  return this.sum() / 2;
+};
 
 const s1 = new HighSchool(100, 91);
 console.log(s1.sum());
