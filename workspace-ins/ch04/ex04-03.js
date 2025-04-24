@@ -5,10 +5,12 @@ console.log(sum(10, 20, 30));
 
 console.log(currySum(10)(20)(30));
 
-function currySum(a){
+let currySum = function(a){
   return function(b){
     return function(c){
       return a + b + c;
     };
   };
 }
+
+currySum = (a) => (b) => (c) => a + b + c;
