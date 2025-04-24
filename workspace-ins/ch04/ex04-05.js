@@ -7,7 +7,7 @@ Function.prototype.memo = function(key){ // this = isPrime
   if(this._cache[key] !== undefined){ // key에 대해서 계산이 끝나고 캐시된 경우
     return this._cache[key];
   }else{
-    return this._cache[num] = this(key);
+    return this._cache[key] = this(key); // isPrime 함수를 호출해서 결과를 받은 후 캐시에 저장하고 리턴
   }
 };
 
