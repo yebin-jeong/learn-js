@@ -112,7 +112,6 @@ node ex06-01.js
 * TypeScript 코드를 JavaScript로 컴파일하지 않고 바로 실행할 수 있게 해주는 Node.js 확장 모듈
 
 #### ts-node 설치
-* 프로젝트 루트에서 실행
 ```sh
 npm i ts-node -g
 ```
