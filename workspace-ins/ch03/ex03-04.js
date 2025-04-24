@@ -28,10 +28,20 @@ console.log(s1.avg());
  * @param {number} eng 영어 점수
  */
 function College(kor, eng){
-
+  this.kor = kor;
+  this.eng = eng;
 }
+College.prototype.sum = function(){
 
-const c1 = new College(80, 71);
-console.log(c1.sum());
-console.log(c1.avg());
-console.log(c1.grade());
+};
+College.prototype.avg = function(){
+
+};
+College.prototype.grade = function(){
+
+};
+
+const c1 = new College(80, 99);
+console.log(c1.sum()); // 179
+console.log(c1.avg()); // 89.5
+console.log(c1.grade()); // B
