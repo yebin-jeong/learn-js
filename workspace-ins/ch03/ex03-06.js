@@ -8,17 +8,20 @@
  * @param {number} kor 국어 점수
  * @param {number} eng 영어 점수
  */
-function HighSchool(kor, eng){
-  this.kor = kor;
-  this.eng = eng;
+
+class HighSchool{
+  constructor(kor, eng){
+    this.kor = kor;
+    this.eng = eng;
+  }
+  sum(){
+    return this.kor + this.eng;
+  }
+  avg(){
+    // 소수 첫째자리에서 반올림한다.
+    return Math.round(this.sum() / 2);
+  }
 }
-HighSchool.prototype.sum = function(){
-  return this.kor + this.eng;
-};
-HighSchool.prototype.avg = function(){
-  // 소수 첫째자리에서 반올림한다.
-  return Math.round(this.sum() / 2);
-};
 
 const s1 = new HighSchool(100, 91);
 console.log(s1.sum());
@@ -29,9 +32,13 @@ console.log(s1.avg());
  * @param {number} kor 국어 점수
  * @param {number} eng 영어 점수
  */
-function College(kor, eng){
-  HighSchool.call(this, kor, eng);
+
+class College{
+  constructor(kor, eng){
+    HighSchool.call(this, kor, eng);
+  }
 }
+
 
 inherite(HighSchool, College);
 
