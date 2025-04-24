@@ -80,9 +80,9 @@
 ## TypeScript Compiler 설치
 * node.js용 TypeScript Compiler 모듈을 global로 설치(어느 경로에서나 tsc 명령어 사용 가능)
 * VSCode > View > Terminal
-    ```sh
-    npm i -g typescript
-    ```
+```sh
+npm i -g typescript
+```
 
 ## 터미널 테스트
 * workspace/ch06/ex06-01.ts 파일 작성
@@ -118,8 +118,7 @@ npm i ts-node -g
 
 #### 실행
 ```sh
-cd workspace/ch06
-ts-node ex06-01.js
+ts-node ex06-01.ts
 ```
 
 ## 타입스크립트 설정 파일
