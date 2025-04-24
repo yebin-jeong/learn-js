@@ -35,7 +35,9 @@ function College(kor, eng){
 }
 
 // College가 HighSchool을 상속 받는다.
-College.prototype = new HighSchool();
+const F = new Function();
+F.prototype = HighSchool.prototype;
+College.prototype = new F();
 College.prototype.constructor = College;
 
 College.prototype.grade = function(){
@@ -57,3 +59,5 @@ const c1 = new College(80, 99);
 console.log(c1.sum()); // 179
 console.log(c1.avg()); // 89.5
 console.log(c1.grade()); // B
+
+console.log(College.prototype);
