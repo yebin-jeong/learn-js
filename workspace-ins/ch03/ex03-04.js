@@ -32,13 +32,24 @@ function College(kor, eng){
   this.eng = eng;
 }
 College.prototype.sum = function(){
-
+  return this.kor + this.eng;
 };
 College.prototype.avg = function(){
-
+  return this.sum() / 2;
 };
 College.prototype.grade = function(){
-
+  let level = 'F';
+  const avg = this.avg();
+  if(avg >= 90){
+    level = 'A';
+  }else if(avg >= 80){
+    level = 'B';
+  }else if(avg >= 70){
+    level = 'C';
+  }else if(avg >= 60){
+    level = 'D';
+  }
+  return level;
 };
 
 const c1 = new College(80, 99);
