@@ -34,11 +34,15 @@ function College(kor, eng){
   this.eng = eng;
 }
 
-// College가 HighSchool을 상속 받는다.
-const F = new Function();
-F.prototype = HighSchool.prototype;
-College.prototype = new F();
-College.prototype.constructor = College;
+inherite(HighSchool, College);
+
+// Child가 Parent를 상속 받는다.
+function inherite(Parent, Child){
+  const F = new Function();
+  F.prototype = Parent.prototype;
+  Child.prototype = new F();
+  Child.prototype.constructor = Child;
+}
 
 College.prototype.grade = function(){
   let level = 'F';
