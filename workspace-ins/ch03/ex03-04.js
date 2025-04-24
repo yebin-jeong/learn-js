@@ -15,7 +15,8 @@ HighSchool.prototype.sum = function(){
   return this.kor + this.eng;
 };
 HighSchool.prototype.avg = function(){
-  return this.sum() / 2;
+  // 소수 첫째자리에서 반올림한다.
+  return Math.round(this.sum() / 2);
 };
 
 const s1 = new HighSchool(100, 91);
@@ -31,12 +32,11 @@ function College(kor, eng){
   this.kor = kor;
   this.eng = eng;
 }
-College.prototype.sum = function(){
-  return this.kor + this.eng;
-};
-College.prototype.avg = function(){
-  return this.sum() / 2;
-};
+
+// College가 HighSchool을 상속 받는다.
+College.prototype = new HighSchool();
+College.prototype.constructor = College;
+
 College.prototype.grade = function(){
   let level = 'F';
   const avg = this.avg();
