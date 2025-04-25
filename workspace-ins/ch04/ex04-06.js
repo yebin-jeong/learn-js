@@ -1,11 +1,11 @@
 // ex02-23.js 복사
 
 // 지정한 수가 소수인지 여부를 반환
-const isPrime = function(num){ // num = 5
+let isPrime = (function(num){ // num = 5
   // 소수 판별 코드
   let prime = true;
 
-  for(let i=2; i<=Math.sqrt(num); i++){
+  for(let i=2; i<=num; i++){
     if(num % i === 0){
       prime = false;
       break;
@@ -13,7 +13,10 @@ const isPrime = function(num){ // num = 5
   }
   
   return prime;
-};
+}).memoize();
+
+// isPrime 함수에 메모이제이션 기능 추가
+// isPrime = isPrime.memoize();
 
 console.time('소요시간');
 console.log('3 -> ', isPrime(3));
