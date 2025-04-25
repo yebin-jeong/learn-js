@@ -5,7 +5,7 @@ let isPrime = (function(num){ // num = 5
   // 소수 판별 코드
   let prime = true;
 
-  for(let i=2; i<=num; i++){
+  for(let i=2; i<num; i++){
     if(num % i === 0){
       prime = false;
       break;
