@@ -1,4 +1,4 @@
-﻿/*
+﻿﻿/*
  * 프로토타입 체인을 이용한 상속 기능 구현(중계 함수 추가)
  * ex03-04.js 복사
  */
@@ -33,18 +33,8 @@ function College(kor, eng) {
   HighSchool.call(this, kor, eng);
 }
 
-inherite(HighSchool, College);
-
-// Child가 Parent를 상속 받는다.
-function inherite(Parent, Child) {
-  // const F = new Function();
-  // F.prototype = Parent.prototype;
-  // Child.prototype = new F();
-
-  // Object.create(): 지정한 prototype 객체를 참조하는 인스턴스 생성
-  Child.prototype = Object.create(Parent.prototype);
-  Child.prototype.constructor = Child;
-}
+// js/mylib.js에 정의
+mylib.inherite(HighSchool, College);
 
 College.prototype.grade = function () {
   let level = "F";
