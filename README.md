@@ -546,7 +546,7 @@ tsc --watch
 * 📜 함수 호출 방법 4 - 생성자 함수
   - 💻 [02-20 생성자 함수 활용](./workspace-ins/ch02/ex02-20.js)
 * 📜 익명 함수, 콜백 함수
-  - 💻 [02-21 익명함수와 콜백함수](./workspace-ins/ch02/ex02-21.js)
+  - 💻 [02-21 익명함수와 콜백함수](./workspace-ins/ch02/ex02-21.html)
 * 📜 고차 함수
   - 💻 [02-22 배열 다루기](./workspace-ins/ch02/ex02-22.js)
 
