@@ -537,7 +537,7 @@ tsc --watch
   - 💻 [02-17-02 함수 내부의 this 바인딩 문제 해결(call)](./workspace-ins/ch02/ex02-17-02.js)
   - 💻 [02-17-03 함수 내부의 this 바인딩 문제 해결(화살표 함수)](./workspace-ins/ch02/ex02-17-03.js)
   - 💻 [02-18 가변 인자 처리 - apply() 활용](./workspace-ins/ch02/ex02-18.js)
-  - 💻 [02-18-02 가변 인자 처리 - 전개 연산자 활용](./workspace-ins/ch02/ex02-18-02.js)
+  - 💻 [02-18-02 가변 인자 처리 - 전개 구문 활용](./workspace-ins/ch02/ex02-18-02.js)
 * 📜 함수 호출 방법 4 - 생성자 함수
   - 💻 [02-19 생성자 함수](./workspace-ins/ch02/ex02-19.js)
 
