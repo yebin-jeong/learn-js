@@ -553,7 +553,6 @@ tsc --watch
 #### 오후(3시간)
 * 📜 메모이제이션
   - 💻 [02-23 소수 판별 (메모이제이션)](./workspace-ins/ch02/ex02-23.js)
-  - ex02-23.js
 * 3강 프로토타입, 상속과 클래스
 * 📜 프로토타입
   - 💻 [03-01 prototype 속성 - Score 생성자 함수](./workspace-ins/ch03/ex03-01.js)
@@ -581,18 +580,18 @@ tsc --watch
   - 💻 [04-04 Partial application](./workspace-ins/ch04/ex04-04.js)
   - 💻 [02-17-04 함수 내부의 this 바인딩 문제 해결(bind)](./workspace-ins/ch02/ex02-17-04.js)
 * 📜 클로저 용법 - 메모이제이션
-  - 💻 [04-05 Wrapper - 메모이제이션](./workspace-ins/ch04/ex04-05.js)
+  - 💻 [04-05 메모이제이션](./workspace-ins/ch04/ex04-05.js)
 
 ### 20일차(2025.04.25 금)
 #### 오전(3시간)
 * 📜 클로저 용법 - 메모이제이션
-  - 💻 [04-06 Wrapper - 메모이제이션, 클로저](./workspace-ins/ch04/ex04-06.js)
+  - 💻 [04-06 메모이제이션, 클로저 사용](./workspace-ins/ch04/ex04-06.js)
 * 📜 즉시 실행 함수
   - 💻 [04-07 즉시실행 함수](./workspace-ins/ch04/ex04-07.js)
 
 #### 오후(3시간)
 * 📜 즉시 실행 함수
-  - 💻 [04-08 즉시실행 함수가 필요한 예제 (클로저)](./workspace-ins/ch04/ex04-08.js)
+  - 💻 [04-08 즉시실행 함수가 필요한 예제 (클로저)](./workspace-ins/ch04/ex04-08.html)
 * 타입스크립트
 * 📜 개발 환경 구성
   - 💻 [06-01 개발 환경 확인](./workspace-ins/ch06/ex06-01.js)
