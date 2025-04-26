@@ -126,6 +126,7 @@ ts-node ex06-01.js
 * tsconfig.json 파일은 타입스크립트의 설정 파일로, 컴파일러(tsc)가 코드를 어떻게 처리할지를 정의
 
 ### 타입스크립트 설정 파일(tsconfig.json) 생성
+* 일반적으로 tsconfig.json 파일은 프로젝트 루트에 두지만 본 교육에서는 수강생과 강사의 설정 파일 충돌을 막기 위해서 workspace 하위에 생성
 * workspace 에서 실행
 ```sh
 tsc --init
