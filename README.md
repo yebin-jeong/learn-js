@@ -600,9 +600,9 @@ tsc --watch
 
 #### 병아리반(1일차)
 * 프로그래머스 일일 도전 과제 day1
-  - 💻 [Day1-01 출력](./workspace-ins/programmers/daily/day01/01.js)
-  - 💻 [Day1-02 문자열 출력하기](./workspace-ins/programmers/daily/day01/02.js)
-  - 💻 [Day1-03 a와 b 출력하기](./workspace-ins/programmers/daily/day01/03.js)
+  - 💻 [Day1-01 문자열 출력하기](./workspace-ins/programmers/daily/day01/01.js)
+  - 💻 [Day1-02 a와 b 출력하기](./workspace-ins/programmers/daily/day01/02.js)
+  - 💻 [Day1-03 문자열 반복해서 출력하기](./workspace-ins/programmers/daily/day01/03.js)
 
 # 참고 사이트
 ## 자바스크립트 학습
