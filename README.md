@@ -126,7 +126,7 @@ ts-node ex06-01.js
 * tsconfig.json 파일은 타입스크립트의 설정 파일로, 컴파일러(tsc)가 코드를 어떻게 처리할지를 정의
 
 ### 타입스크립트 설정 파일(tsconfig.json) 생성
-* 프로젝트 루트로 이동 후 실행
+* workspace 에서 실행
 ```sh
 tsc --init
 ```
@@ -141,17 +141,19 @@ tsc --init
 * ts 파일과 컴파일된 js 파일을 분리해서 관리
   - 일반적으로 ts와 js 파일 분리를 위해서 설정함
   - 이번 교육에서는 컴파일된 js 파일을 쉽게 확인하기 위해서 ts와 같은 폴더에 컴파일되도록 다음 설정은 하지 않음
-  - ~~"compilerOptions"의 "outDir": "./" 주석 해제 후 "./workspace/dist"로 수정~~
+  - ~~"compilerOptions"의 "outDir": "./" 주석 해제 후 "./dist"로 수정~~
 * workspace 하위의 모든 파일을 대상으로 컴파일
-  - "compilerOptions" 아래에 "include": ["workspace/**/*"] 추가
+  - tsconfig.json 파일이 프로젝트 루트에 있다면 아래의 설정이 필요하지만 tsconfig.json 파일을 workspace 폴더에 두었다면 불필요
+  - ~~"compilerOptions" 아래에 "include": ["workspace/**/*"] 추가~~
 * 컴파일에서 제외할 폴더나 파일 지정
-  - "compilerOptions" 아래에 "exclude": ["node_modules", "sample/**/*"] 추가
+  - tsconfig.json 파일이 프로젝트 루트에 있다면 아래의 설정이 필요하지만 tsconfig.json 파일을 workspace 폴더에 두었다면 불필요
+  - ~~"compilerOptions" 아래에 "exclude": ["node_modules", "sample/**/*"] 추가~~
 * 전체 옵션은 다음 URL 참고
   - <https://www.typescriptlang.org/ko/tsconfig>
 
 ## tsc --watch 옵션
 * 하위 폴더를 포함해서 ts 파일 변경을 감지하고 자동으로 컴파일한 후 outDir로 지정한 폴더에 js 파일 생성
-* 프로젝트 루트에서 실행
+* tsconfig.json 파일이 있는 폴더에서 실행
 
 ```sh
 tsc --watch
