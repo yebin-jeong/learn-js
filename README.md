@@ -579,6 +579,7 @@ tsc --watch
   - 💻 [04-03 커링](./workspace-ins/ch04/ex04-03.js)
 * 📜 클로저 용법 - Partial application
   - 💻 [04-04 Partial application](./workspace-ins/ch04/ex04-04.js)
+  - 💻 [02-17-04 함수 내부의 this 바인딩 문제 해결(bind)](./workspace-ins/ch02/ex02-17-04.js)
 * 📜 클로저 용법 - 메모이제이션
   - 💻 [04-05 Wrapper - 메모이제이션](./workspace-ins/ch04/ex04-05.js)
 
