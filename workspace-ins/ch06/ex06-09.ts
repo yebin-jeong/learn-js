@@ -7,7 +7,6 @@
   interface User {
     name: string;
     age: number;
-    // getAge(): number; // 메서드 정의
   };
 
   const u1: User = {
