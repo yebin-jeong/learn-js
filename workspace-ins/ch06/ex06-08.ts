@@ -5,13 +5,16 @@
 
   // 할일 등록시 사용
   type TodoRegist = {
-    title: string, 
-    content: string,
+    title: string;
+    content: string;
   };
 
   // 할일 조회시 사용
-  type TodoInfo = {
-    
+  type TodoInfo = TodoRegist & {
+    id: number;
+    // title: string;
+    // content: string;
+    done: boolean;
   };
 
   const todo1: TodoRegist = {
