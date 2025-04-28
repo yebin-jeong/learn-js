@@ -8,9 +8,9 @@
   }
 
   // 할일 상세 조회시 사용
-  interface TodoInfo {
-    title: string;
-    content: string;
+  interface TodoInfo extends TodoRegist {
+    // title: string;
+    // content: string;
     id: number;
     done: boolean;
   }
