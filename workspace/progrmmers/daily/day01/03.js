@@ -32,10 +32,7 @@ rl.on("line", function (line) {
 }).on("close", function () {
   str = input[0];
   n = Number(input[1]);
-  let res = "";
-  for (let i = 0; i < n; i++) {
-    res += str;
-  }
+  const res = getRepeat(str, n);
   console.log(res);
 });
 
@@ -44,5 +41,5 @@ function getRepeat(str, num) {
   for (let i = 0; i < num; i++) {
     res += str;
   }
-  console.log(res);
+  return res;
 }
