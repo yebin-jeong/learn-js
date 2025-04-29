@@ -21,16 +21,24 @@ d
 e
 */
 
-const readline = require('readline');
+const readline = require("readline");
 const rl = readline.createInterface({
   input: process.stdin,
-  output: process.stdout
+  output: process.stdout,
 });
 
 let input = [];
 
-rl.on('line', function (line) {
+rl.on("line", function (line) {
   input = [line];
-}).on('close',function(){
+}).on("close", function () {
   str = input[0];
+  str = input[0];
+  printStr(str);
 });
+
+function printStr(str) {
+  for (let s of str) {
+    console.log(s);
+  }
+}
