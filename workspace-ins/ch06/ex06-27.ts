@@ -56,7 +56,6 @@
     return 'admin' in user && user.admin === true;
   }
 
-
   function isGuest(user: User | AdminUser | Guest): user is Guest{
     return !('age' in user) && !('level' in user) && user.name === '게스트';
   }
