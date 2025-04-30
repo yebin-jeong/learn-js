@@ -5,5 +5,11 @@ tempCode**.js
 workspace/ch06/*.js
 workspace/ch07/*.js
 tempCodeRunnerFile.*
+<<<<<<< HEAD
 .github
 
+=======
+workspace-ins/ch06/*.js
+workspace-ins/ch07/*.js
+.github
+>>>>>>> e57bd2f16791379e70f52c686d25c941d73f8d21
