@@ -21,26 +21,7 @@
         background: pink;
       }
   </style>
-  <script>
-    document.addEventListener('DOMContentLoaded', function(){
-      const table = document.querySelector('table');
-      table.addEventListener('click', function(event){
-        if(event.target.tagName === 'TD'){
-          event.target.classList.toggle('red');
-        }
-      });
-
-      // 박선영
-      table.addEventListener('dblclick', function (event) {
-        console.log(event.target);
-        console.log(event.currentTarget);
-
-        if (event.target.tagName === 'TD') {
-          event.target.classList.toggle('pink');
-        }
-      });
-    });
-  </script>
+  <script src="ex05-11.js"></script>
 </head>
 <body>
   <h1>DOM - 이벤트 위임</h1>
