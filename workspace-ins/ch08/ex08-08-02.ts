@@ -22,7 +22,9 @@
 
   function test(){ // 비동기
     f1().then((result) => {
-      console.log('\t8. f1 작업이 완료된 후에 호출.', result);
+      console.log('8. f1 작업이 완료된 후에 호출.', result);
+    }, (reason) => {
+      console.log('8. f1 작업 실패.', reason);
     });
   }
 
