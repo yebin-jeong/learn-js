@@ -29,10 +29,12 @@ console.log(haru);
 
 if (MyMath.minus(5, 6) < 0) {
   // Dynamic Import
+  // ES2015 Promise
   import('./math.js').then((dynamicMath) => {
     dynamicMath.plus(7, 8);
   });
 
+  // ES2017 async/await
   const dynamicMath2 = await import('./math.js');
   dynamicMath2.minus(8, 9);
 }
