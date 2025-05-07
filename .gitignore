@@ -1,5 +1,6 @@
 .vscode
 .history
+.github
 PPT/~$*
 tempCode**.js
 workspace/ch06/*.js
@@ -11,5 +12,11 @@ tempCodeRunnerFile.*
 =======
 workspace-ins/ch06/*.js
 workspace-ins/ch07/*.js
+<<<<<<< HEAD
 .github
 >>>>>>> e57bd2f16791379e70f52c686d25c941d73f8d21
+=======
+# workspace-ins/ts-refactoring/**/*
+workspace-ins/ts-refactoring/**/*.js
+!workspace-ins/ts-refactoring/convert-js-to-ts.js
+>>>>>>> 84622248606cd4602d7e760c121e99a3df57be31
