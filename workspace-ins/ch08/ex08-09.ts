@@ -21,14 +21,14 @@
   }
 
   function test(){
-    p1().then(result => {
-      console.log('p1의 작업 결과.', result);
-    }).then(a1).then(result => {
+    a1().then(result => {
       console.log('a1의 작업 결과.', result);
-    }).then(p2).then(result => {
-      console.log('p2의 작업 결과.', result);
+    }).then(p1).then(result => {
+      console.log('p1의 작업 결과.', result);
     }).then(a2).then(result => {
       console.log('a2의 작업 결과.', result);
+    }).then(p2).then(result => {
+      console.log('p2의 작업 결과.', result);
     }).catch(error => {
       console.log('에러 발생.', error);
     });
