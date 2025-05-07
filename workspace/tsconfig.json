@@ -110,6 +110,6 @@
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
-
-  "exclude": ["**/tempCodeRunnerFile.ts"] // code runner가 만든 임시 파일은 컴파일 제외
+  // "exclude": ["**/tempCodeRunnerFile.ts"] // code runner가 만든 임시 파일은 컴파일 제외
+  "exclude": ["**/tempCodeRunnerFile.ts", "ts-refactoring/**/*"] // code runner가 만든 임시 파일은 컴파일 제외
 }
