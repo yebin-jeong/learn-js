@@ -12,7 +12,7 @@
       console.log(`4. ${delay}ms 동안 작업중...`);
 
       setTimeout(() => {
-        if(delay < 500) {
+        if(delay < 900) {
           resolve('f1 작업 결과.' + delay);
         } else {
           reject('f1 작업 실패 사유.' + delay);
@@ -22,11 +22,37 @@
   }
 
   function test(){ // 비동기
-    f1().then(f1).then(f1).then(result => {
-      console.log('세개의 f1 작업이 모두 성공한 후에 호출.', result);
-    }).catch(reason => {
-      console.log('셋중 하나라도 작업이 실패했을때 호출.', reason);
-    });
+    // f1().then(f1).then(f1).then(result => {
+    //   console.log('세개의 f1 작업이 모두 성공한 후에 호출.', result);
+    // }).catch(reason => {
+    //   console.log('셋중 하나라도 작업이 실패했을때 호출.', reason);
+    // });
+
+    // let successCount = 0;
+    // f1().then(result => {
+    //   successCount++;
+    //   console.log('5. f1 작업이 성공한 후에 호출.', result);
+    //   if(successCount === 3) {
+    //     console.log('3개 전체 성공.');
+    //   }
+    // });
+    // f1().then(result => {
+    //   successCount++;
+    //   console.log('6. f1 작업이 성공한 후에 호출.', result);
+    //   if(successCount === 3) {
+    //     console.log('3개 전체 성공.');
+    //   }
+    // });
+    // f1().then(result => {
+    //   successCount++;
+    //   console.log('7. f1 작업이 성공한 후에 호출.', result);
+    //   if(successCount === 3) {
+    //     console.log('3개 전체 성공.');
+    //   }
+    // });
+
+    
+
   }
 
   console.log('1. 작업 시작.');
