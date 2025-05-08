@@ -33,10 +33,17 @@ document.getElementById('testReload')?.addEventListener('click', () => {
 
 // 호스트네임 변경 테스트
 document.getElementById('changeHostname')?.addEventListener('click', () => {
-  
+  const newHostName = 'www.example.com';
+  const url = new URL(location.href);
+  console.log(url);
+  url.hostname = newHostName;
+  location.href = url.toString();
 });
 
 // URL 파라미터 추가 테스트
 document.getElementById('addParameter')?.addEventListener('click', () => {
-  
+  const currentUrl = new URL(location.href);
+  currentUrl.searchParams.set('page', '2');
+  currentUrl.searchParams.set('keyword', 'dogs');
+  location.href = currentUrl.toString();
 });
