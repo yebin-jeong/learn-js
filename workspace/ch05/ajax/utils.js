@@ -1,2 +1,1 @@
-export function appendImages(images) {
-}
+export function appendImages(images) { }
