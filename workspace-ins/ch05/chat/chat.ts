@@ -58,6 +58,9 @@ joinRoomBtn.addEventListener('click', async () => {
   };
   const result = await joinRoom(params);
   console.log('채팅방 참여 응답', result);
+  if(result.ok) {
+    connectedRoom.textContent = result.roomInfo.roomName;
+  }
 });
 
 /**
@@ -66,7 +69,7 @@ joinRoomBtn.addEventListener('click', async () => {
  */
 leaveRoomBtn.addEventListener('click', () => {
   // TODO 채팅방 퇴장 함수 호출
-
+  leaveRoom();
 });
 
 /**
