@@ -120,11 +120,12 @@ msgInput?.addEventListener('keydown', (e) => {
  */
 window.addEventListener('pagehide', () => {
   // TODO 로컬 스토리지에 채팅 기록 저장
-
+  localStorage.setItem('history', JSON.stringify(chatHistory));
 });
 
 /** 로컬 스토리지에서 채팅 기록을 불러옵니다. */
-
+const chatHistory: ChatMessage[] = JSON.parse(localStorage.getItem('history') || '[]');
+console.log(chatHistory);
 
 /**
  * 메시지 수신 이벤트 핸들러
@@ -132,5 +133,5 @@ window.addEventListener('pagehide', () => {
  */
 socket.on('message', (data: ChatMessage) => {
   // TODO 채팅 메시지 추가
-  
+  chatHistory.push(data);
 });
