@@ -34,7 +34,14 @@ const sendBtn = document.querySelector<HTMLButtonElement>('#sendBtn')!;
  */
 createRoomBtn.addEventListener('click', async () => {
   // TODO 채팅방 생성 함수 호출
-
+  const params: CreateRoomParams = {
+    roomId: roomId.value,
+    user_id: userId.value,
+    roomName: roomName.value,
+    hostName: '멋사'
+  };
+  const result = await createRoom(params);
+  console.log('채팅방 생성 요청 결과', result);
 });
 
 /**
@@ -44,7 +51,13 @@ createRoomBtn.addEventListener('click', async () => {
  */
 joinRoomBtn.addEventListener('click', async () => {
   // TODO 채팅방 입장 함수 호출
-
+  const params: JoinRoomParams = {
+    roomId: enterRoomId.value,
+    user_id: userId.value,
+    nickName: nickName.value
+  };
+  const result = await joinRoom(params);
+  console.log('채팅방 참여 응답', result);
 });
 
 /**
@@ -82,7 +95,9 @@ roomInfoBtn.addEventListener('click', async () => {
  */
 sendBtn?.addEventListener('click', () => {
   // TODO 메시지 전송 함수 호출
-
+  sendMsg(msgInput.value);
+  msgInput.value = '';
+  msgInput.focus();
 });
 
 /**
@@ -91,7 +106,11 @@ sendBtn?.addEventListener('click', () => {
  */
 msgInput?.addEventListener('keydown', (e) => {
   // TODO 메시지 전송 함수 호출
-
+  if(e.key === 'Enter'){
+    sendMsg(msgInput.value);
+    msgInput.value = '';
+    msgInput.focus();
+  }
 });
 
 /**
