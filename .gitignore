@@ -2,6 +2,7 @@
 .history
 .github
 PPT/~$*
+<<<<<<< HEAD
 tempCode**.js
 workspace/ch06/*.js
 workspace/ch07/*.js
@@ -16,6 +17,15 @@ workspace-ins/ch07/*.js
 .github
 >>>>>>> e57bd2f16791379e70f52c686d25c941d73f8d21
 =======
+=======
+node_modules
+tempCodeRunnerFile.*
+workspace-ins/ch05/ajax/**/*.js
+workspace-ins/ch05/bom/**/*.js
+workspace-ins/ch06/**/*.js
+workspace-ins/ch07/**/*.js
+workspace-ins/ch08/**/*.js
+>>>>>>> 0eb2205a3f163e4f50859bd3814ee6621f9679e2
 # workspace-ins/ts-refactoring/**/*
 workspace-ins/ts-refactoring/**/*.js
 !workspace-ins/ts-refactoring/convert-js-to-ts.js
