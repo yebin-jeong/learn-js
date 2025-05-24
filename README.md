@@ -15,17 +15,20 @@
 ## Github 저장소 복사
 1. 자바스크립트 실습 Github 저장소
     * `https://github.com/FEBC-13/JS.git`
+
 2. 터미널 프로그램 실행 후 개발 수업에 사용할 폴더 생성 후 이동
     * 예시
     ```sh
     mkdir febc13
     cd febc13
     ```
+
 3. 자바스크립트 수업에 사용할 폴더 생성 후 이동
     ```sh
     mkdir 01_js
     cd 01_js
     ```
+    
 4. 실습 저장소를 로컬에 clone
     ```sh
     git clone https://github.com/FEBC-13/JS.git
@@ -45,17 +48,17 @@
 ## Visual Studio Code 설정
 1. VSCode 실행
 2. 프로젝트 선택
-    * File > Open Folder... > febc13/01.js/JS 선택
+  * File > Open Folder... > febc13/01.js/JS 선택
 3. File > Preferences > Settings
 	* "Files: Auto Save": onFocusChange
 	* "Editor: Font Size": 각자 맞춰서 조절
 	* "Editor: Tab Size": 2
 	* "Editor: Detect Indentation": 체크 해제
 	* Workspace 탭 > "Files: Readonly Include"
-      - Readonly Include가 보이지 않을 경우 VSCode를 최신 버전(1.79 이상)으로 업데이트
-      - Add Pattern > `PPT/**` 입력한 후 OK 선택
-      - Add Pattern > `workspace-ins/**` 입력한 후 OK 선택
-      - Add Pattern > `sample/**` 입력한 후 OK 선택
+    - Readonly Include가 보이지 않을 경우 VSCode를 최신 버전(1.79 이상)으로 업데이트
+    - Add Pattern > `PPT/**` 입력한 후 OK 선택
+    - Add Pattern > `workspace-ins/**` 입력한 후 OK 선택
+    - Add Pattern > `sample/**` 입력한 후 OK 선택
 
 ## sample 폴더 복사
 * sample/01/workspace 폴더를 복사해서 프로젝트 루트에 붙여넣기
