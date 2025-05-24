@@ -89,12 +89,12 @@
 
 ## 터미널 테스트
 * workspace/ch06/ex06-01.ts 파일 작성
-```ts
-function hello(name: string): string {
-  return 'Hello ' + name;
-}
-console.log(hello('TypeScript'));
-```
+  ```ts
+  function hello(name: string): string {
+    return 'Hello ' + name;
+  }
+  console.log(hello('TypeScript'));
+  ```
 
 ### Node.js로 실행
 #### 컴파일
