@@ -3,7 +3,7 @@
 
 # 개발 환경 구축
 ## 프로그램 설치
-- 본인의 OS에 맞는 버전 다운로드 후 설치
+* 본인의 OS에 맞는 버전 다운로드 후 설치
   - Nodejs 설치 <https://nodejs.org/en/download/>
   - Visual Studio Code 설치 <https://code.visualstudio.com/download>
   - Git 설치 <https://git-scm.com/downloads>
@@ -89,7 +89,6 @@
 
 ## 터미널 테스트
 * workspace/ch06/ex06-01.ts 파일 작성
-
 ```ts
 function hello(name: string): string {
   return 'Hello ' + name;
