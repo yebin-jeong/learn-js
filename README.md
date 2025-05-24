@@ -14,7 +14,7 @@
 # 실습 준비
 ## Github 저장소 복사
 1. 자바스크립트 실습 Github 저장소
-    * `https://github.com/FEBC-13/JS.git`
+  * `https://github.com/FEBC-13/JS.git`
 
 2. 터미널 프로그램 실행 후 개발 수업에 사용할 폴더 생성 후 이동
     * 예시
@@ -24,10 +24,10 @@
     ```
 
 3. 자바스크립트 수업에 사용할 폴더 생성 후 이동
-    ```sh
-    mkdir 01_js
-    cd 01_js
-    ```
+  ```sh
+  mkdir 01_js
+  cd 01_js
+  ```
     
 4. 실습 저장소를 로컬에 clone
     ```sh
